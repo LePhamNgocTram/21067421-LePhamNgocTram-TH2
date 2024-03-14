@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 thực hành 2</title>
+    <link rel="stylesheet" href="css/Bai2.css">
+    <script>
+        function onSubmitForm() {
+            var name = document.getElementById("name").value;
+            var mathe = document.getElementById("mathe").value;
+            var tel = document.getElementById("tel").value;
+            var email = document.getElementById("email").value;
+            var mahd = document.getElementById("mahd").value;
+            var chitiet = document.getElementById("chitiet").value;
+            var chon = document.getElementById("chon").value;
+
+            document.getElementById("result").innerHTML = 
+                alert("Họ và tên:" + name +
+                "\nMã thẻ: " + mathe  +
+                "\nSố điện thoại: " + tel +
+                "\nEmail: " + email  +
+                "\nMahd: " + mahd +
+                "\nLoai KH:" + chon+
+                "\nNội dung góp ý: " + chitiet  );
+
+            return false;
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header" ><h1 id="chudau"><b>ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</b></h1>
+                    <p>Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng việt có dấu</p>
+                    <p>Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm(nếu có)</p>                    
+        </div>
+        <div class="form">
+            <form class="khungform" onsubmit="return onSubmitForm()">
+                <table>
+                    <tr>
+                        <td ><input type="text" placeholder="Họ và tên" name="name" class="mini" id="name" required></td>
+                        <td ><input type="text" placeholder="Mã thẻ" name="mathe" class="mini" id="mathe" required></td>
+                    </tr>
+                    <tr>
+                        <td ><input type="tel" placeholder="Số điện thoại" name="tel" class="mini" id="tel" required></td>
+                        <td ><input type="email" placeholder="E-mail" name="email" class="mini" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <select name="chon" class="mini" id="chon" >
+                                <option value="Chọn loại khách hàng">Chọn loại khách hàng</option>
+                                <option value="VIP">VIP</option>
+                                <option value="Bình Thường">Bình thường</option>
+                                <option value="Khách hàng mới">Khách hàng mới</option>
+                            </select>
+                        </td>
+                        <td ><input type="text" placeholder="Mã hóa đơn" name="mahd" class="mini" id="mahd" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" ><input type="text" placeholder="Nhập chi tiết mô tả" name="chitiet" id="chitiet" class="mini1"></td>
+                    </tr>
+                    <tr>
+                        <td><div class="sub"><input type="submit" value="GỬI GÓP Ý" style="background-color: blue; border: none; color: aliceblue;"> <img src="image/ảnh bài 2.jpg" alt="hinhanh" style="width: 20px;"></div> </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+    </div>
+    
+       
+        
+    
+</body>
+</html>

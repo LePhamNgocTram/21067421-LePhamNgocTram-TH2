@@ -1,0 +1,53 @@
+body {
+    width: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    height: 600px;
+    background-color: plum;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.title {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="number"] {
+    color: red;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result .bmi {
+    color: blue;
+}
+
+.result .label {
+    color: black;
+}
+
+.result .advice {
+    color: red;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bài 3 thực hành 2  </title>
+    <link rel="stylesheet" href="/TH2/css/Bai3.css">
+    <script>
+        function showAlert() {
+            var hoTen = document.getElementById("ho-ten").value;
+            var diaChi = document.getElementById("dia-chi").value;
+            var tieuDe = document.getElementById("tieu-de").value;
+            var noiDung = document.getElementById("noi-dung").value;
+
+            alert("Họ và tên: " + hoTen + "\nĐịa chỉ email: " + diaChi + "\nTiêu đề: " + tieuDe + "\nNội dung: " + noiDung);
+        }
+    </script>
+</head>
+<body>
+    <div class="frm">
+        <h1>LIÊN HỆ </h1>
+    </div>
+
+    <div class="nav"></div>
+
+    <div class="table">
+        <div class="table1">
+            <h3 style="color: black;"><b>Thông tin</b></h3>
+            <img src="./image/bai3.1.png" width="15px" height="15px"><span>  Kp.6, P.Linh Trung, TP.Thủ Đức, TPHCM</span> <br>
+            <img src="./image/bai3.2.png"  width="15px" height="15px"><span> info@uit.edu.vn</span> <br>
+            <img src="./image/bai3.3.png" width="15px" height="15px"><span> +842837252002 </span> 
+        </div>
+        <div class="tb2">
+            <h3 style="color: rgb(203, 48, 251);">Hãy liên lạc với chúng tôi bất cứ khi nào!!!</h3>
+            <input id="ho-ten" class="inputs" placeholder="Họ và tên" required> <br>
+            <input id="dia-chi" class="inputs" placeholder="Địa chỉ email" required> <br>
+            <input id="tieu-de" class="inputs" placeholder="Tiêu đề bài về" required> <br>
+            <input id="noi-dung" class="inputs inputs-3" placeholder="Nội dung cần gửi" required> <br>
+            <button id="showAlertBtn" class="btn-mess" onclick="showAlert()"> Gửi tin nhắn <img src="./image/ảnh bài 2.jpg" width="15px" height="15px"> </button>
+        </div>
+       
+</body>
+</html>

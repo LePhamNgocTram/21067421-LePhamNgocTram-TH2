@@ -1,0 +1,52 @@
+body {
+    place-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#ketqua {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}

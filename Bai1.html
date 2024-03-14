@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 thực hành 2</title>
+    <link rel="stylesheet" href="css/Bai1.css">
+</head>
+<body>
+    <div class="container">
+    <p style="color: red; text-align: center;"> Bài 1</p>
+    <h1> GIẢI PHƯƠNG TRÌNH BẬC I</h1>
+    <form action="#">  
+        <input type="text" id="a" name="a" placeholder="Hệ số a">
+        <br>
+        <input type="text" id="b" name="b" placeholder="Hệ số b">
+        <br>
+        <button type="submit">Giải Phương Trình</button>
+        </form>
+    <div class="result">
+        <h2>KẾT QUẢ</h2>
+        <p id="ketqua"></p>
+        </div>
+    </div>
+    <script>
+        const aInput = document.getElementById('a');
+        const bInput = document.getElementById('b');
+        const ketquaEl = document.getElementById('ketqua');
+        const solveEquation = () => {
+        const a = parseFloat(aInput.value);
+        const b = parseFloat(bInput.value);
+        let result;
+        if (a === 0) {
+            if (b === 0) {
+                result = 'Phương trình vô số nghiệm';
+            } else {
+                result = 'Phương trình vô nghiệm';
+            }
+        } else {
+            result = `Nghiệm x = ${-b / a}`;
+        }
+        ketquaEl.textContent = result;
+    };
+    document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    solveEquation();
+});
+    </script>
+</body>
+</html>
